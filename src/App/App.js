@@ -2,6 +2,7 @@ import React from 'react'
 import './App.css'
 import GridLayout from 'react-grid-layout'
 import PV from '../Components/PV/PV'
+import Income from '../Components/Income/Income'
 
 /*
   a: 平台流量数据(折线图)
@@ -65,7 +66,9 @@ const App = () => (
     <div key="b">有效用户数</div>
     <div key="c">注册用户数</div>
     <div key="d">付费用户数</div>
-    <div key="e">营收金额 (饼图)</div>
+    <div key="e">
+      <Income />
+    </div>
     <div key="f">GMV 营收</div>
   </GridLayout>
 )

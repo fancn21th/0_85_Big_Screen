@@ -5,7 +5,7 @@ import './PV.css'
 
 const PV = () => (
   <div className="pv-container">
-    <Title title="平台流量数据(折线图)" />
+    <Title title="平台流量数据" />
     <PvChart />
   </div>
 )
