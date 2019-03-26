@@ -1,3 +1,15 @@
 .pv-container {
+  height: 100%;
   text-align: center;
+}
+
+.pv-title,
+.pv-title--top,
+.pv-title--bottom {
+  height: 50%;
+}
+
+.pv-title--bottom__half {
+  width: 50%;
+  float: left;
 }

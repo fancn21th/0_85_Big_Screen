@@ -1,0 +1,19 @@
+.title {
+  height: 100%;
+}
+
+.title--main,
+.title-sub {
+  display: block;
+  height: 50%;
+}
+
+.title--main {
+  font-size: 120%;
+  font-weight: 800;
+}
+
+.title-sub {
+  font-size: 90%;
+  font-weight: 800;
+}
