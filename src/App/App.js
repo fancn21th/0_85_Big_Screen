@@ -1,6 +1,7 @@
 import React from 'react'
 import './App.css'
 import GridLayout from 'react-grid-layout'
+import PV from '../Components/PV/PV'
 
 /*
   a: 平台流量数据(折线图)
@@ -58,7 +59,9 @@ const layout = [
 
 const App = () => (
   <GridLayout className="layout" layout={layout} cols={12} rowHeight={60} width={1920}>
-    <div key="a">平台流量数据(折线图)</div>
+    <div key="a">
+      <PV />
+    </div>
     <div key="b">有效用户数</div>
     <div key="c">注册用户数</div>
     <div key="d">付费用户数</div>
