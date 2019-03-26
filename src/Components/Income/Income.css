@@ -1,3 +1,15 @@
 .income-container {
+  height: 100%;
   text-align: center;
+}
+
+.income-title,
+.income-title--top,
+.income-title--bottom {
+  height: 50%;
+}
+
+.income-title--bottom__half {
+  width: 50%;
+  float: left;
 }

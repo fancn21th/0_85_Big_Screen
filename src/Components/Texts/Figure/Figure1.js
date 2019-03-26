@@ -4,8 +4,8 @@ import './Figure1.css'
 
 const Figure1 = ({ title, figure, className }) => (
   <div className={`figure1 ${className}`}>
-    <span className="figure1--figure">{figure}</span>
     <span className="figure1--title">{title}</span>
+    <span className="figure1--figure">{figure}</span>
   </div>
 )
 
