@@ -1,4 +1,3 @@
 .react-grid-item:not(.react-grid-placeholder) {
-  background: #356174;
-  color: #ffffff;
+  background: #eeeeee;
 }
