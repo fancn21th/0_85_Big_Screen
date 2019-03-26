@@ -1,0 +1,8 @@
+.figure2 {
+  height: 100%;
+}
+
+.figure2--figure,
+.figure2--title {
+  display: block;
+}

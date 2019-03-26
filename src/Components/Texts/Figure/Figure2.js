@@ -1,18 +1,26 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import './Figure2.css'
 
-const Figure1 = ({ title, subTitle, figure }) => (
-  <div>
-    <span>{title}</span>
-    <span>{subTitle}</span>
-    <span>{figure}</span>
+const Figure2 = ({
+  title, subTitle, figure, className,
+}) => (
+  <div className={`figure2 ${className}`}>
+    <span className="figure2--title">{title}</span>
+    <span className="figure2--subTitle">{subTitle}</span>
+    <span className="figure2--figure">{figure}</span>
   </div>
 )
 
-Figure1.propTypes = {
+Figure2.propTypes = {
   title: PropTypes.string.isRequired,
   subTitle: PropTypes.string.isRequired,
   figure: PropTypes.string.isRequired,
+  className: PropTypes.string,
 }
 
-export default Figure1
+Figure2.defaultProps = {
+  className: '',
+}
+
+export default Figure2

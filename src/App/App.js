@@ -3,6 +3,7 @@ import './App.css'
 import GridLayout from 'react-grid-layout'
 import PV from '../Components/PV/PV'
 import Income from '../Components/Income/Income'
+import Figure from '../Components/Texts/Figure/Figure2'
 
 /*
   a: 平台流量数据(折线图)
@@ -63,13 +64,21 @@ const App = () => (
     <div key="a">
       <PV />
     </div>
-    <div key="b">有效用户数</div>
-    <div key="c">注册用户数</div>
-    <div key="d">付费用户数</div>
+    <div key="b">
+      <Figure title="有效用户数" subTitle="OKCHEM" figure="24,222" />
+    </div>
+    <div key="c">
+      <Figure title="注册用户数" subTitle="OKCHEM" figure="24,222" />
+    </div>
+    <div key="d">
+      <Figure title="付费用户数" subTitle="OKCHEM" figure="24,222" />
+    </div>
     <div key="e">
       <Income />
     </div>
-    <div key="f">GMV 营收</div>
+    <div key="f">
+      <Figure title="GMV 营收" subTitle="总金额" figure="￥2,243,222" />
+    </div>
   </GridLayout>
 )
 
