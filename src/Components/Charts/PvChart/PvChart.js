@@ -51,7 +51,7 @@ const cols = {
 }
 
 const PvChart = () => (
-  <Chart height={400} data={data} scale={cols} forceFit>
+  <Chart height={400} data={data} scale={cols} forceFit padding={[60, 60, 60, 60]} theme="dark">
     <Axis name="year" />
     <Axis name="value" />
     <Tooltip

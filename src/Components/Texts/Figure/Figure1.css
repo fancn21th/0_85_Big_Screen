@@ -6,3 +6,11 @@
 .figure1--title {
   display: block;
 }
+
+.figure1--figure {
+  font-size: 200%;
+}
+
+.figure1--title {
+  font-size: 80%;
+}

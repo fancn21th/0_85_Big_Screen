@@ -3,6 +3,19 @@
 }
 
 .figure2--figure,
-.figure2--title {
+.figure2--title,
+.figure2--subTitle {
   display: block;
+}
+
+.figure2--figure {
+  font-size: 200%;
+}
+
+.figure2--title {
+  font-size: 80%;
+}
+
+.figure2--subTitle {
+  font-size: 60%;
 }
