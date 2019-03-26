@@ -47,7 +47,7 @@ const colsView2 = {
 }
 
 const IncomeChart = () => (
-  <Chart height={400} data={[1]} scale={cols} padding={[0, 0, 200, 0]} forceFit theme="dark">
+  <Chart height={240} data={[1]} scale={cols} padding={[0, 0, 0, 0]} forceFit theme="dark">
     <View data={data1}>
       <Coord
         type="polar"
