@@ -6,9 +6,11 @@ const Figure2 = ({
   title, subTitle, figure, className,
 }) => (
   <div className={`figure2 ${className}`}>
-    <span className="figure2--title">{title}</span>
-    <span className="figure2--subTitle">{subTitle}</span>
-    <span className="figure2--figure">{figure}</span>
+    <div className="figure2--content-wrapper">
+      <span className="figure2--title">{title}</span>
+      <span className="figure2--subTitle">{subTitle}</span>
+      <span className="figure2--figure">{figure}</span>
+    </div>
   </div>
 )
 

@@ -1,6 +1,12 @@
 .figure2 {
   height: 100%;
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.figure2--content-wrapper {
 }
 
 .figure2--figure,
