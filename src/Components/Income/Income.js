@@ -1,10 +1,11 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import Title from '../Texts/Title/Title'
 import Figure from '../Texts/Figure/Figure1'
 import IncomeChart from '../Charts/IncomeChart/IncomeChart'
 import './Income.css'
 
-const PV = () => (
+const Income = ({ transfer, contract, gmv }) => (
   <div className="income-container">
     {/* <Title title="营收金额" /> */}
     <div className="income-title">
@@ -18,4 +19,10 @@ const PV = () => (
   </div>
 )
 
-export default PV
+Income.propTypes = {
+  transfer: PropTypes.string.isRequired,
+  contract: PropTypes.string.isRequired,
+  gmv: PropTypes.string.isRequired,
+}
+
+export default Income

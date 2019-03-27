@@ -69,6 +69,16 @@ class App extends Component {
         lastDay: '0',
         data: [],
       },
+      User: {
+        validUserCount: '0',
+        registeredUserCount: '0',
+        paidUserCount: '0',
+      },
+      Income: {
+        transfer: '0万',
+        contract: '0万',
+        gmv: '￥0',
+      },
     }
   }
 
@@ -82,6 +92,8 @@ class App extends Component {
   render() {
     const {
       PV: { lastWeek, lastDay, data: pvData },
+      User: { validUserCount, registeredUserCount, paidUserCount },
+      Income: { transfer, contract, gmv },
     } = this.state
 
     return (
@@ -90,16 +102,16 @@ class App extends Component {
           <PV lastWeek={lastWeek} lastDay={lastDay} pvData={pvData} />
         </div>
         <div key="b">
-          <Figure title="有效用户数" subTitle="OKCHEM" figure="24,222" />
+          <Figure title="有效用户数" subTitle="OKCHEM" figure={validUserCount} />
         </div>
         <div key="c">
-          <Figure title="注册用户数" subTitle="OKCHEM" figure="24,222" />
+          <Figure title="注册用户数" subTitle="OKCHEM" figure={registeredUserCount} />
         </div>
         <div key="d">
-          <Figure title="付费用户数" subTitle="OKCHEM" figure="24,222" />
+          <Figure title="付费用户数" subTitle="OKCHEM" figure={paidUserCount} />
         </div>
         <div key="e">
-          <Income />
+          <Income transfer={transfer} contract={contract} gmv={gmv} />
         </div>
         <div key="f">
           <Figure title="GMV 营收" subTitle="总金额" figure="￥2,243,222" />

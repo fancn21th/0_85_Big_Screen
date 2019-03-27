@@ -28,5 +28,15 @@
         "value": 4000
       }
     ]
+  },
+  "User": {
+    "validUserCount": "3,213",
+    "registeredUserCount": "2,213",
+    "paidUserCount": "1,213"
+  },
+  "Income": {
+    "transfer": "180万",
+    "contract": "1200万",
+    "gmv": "￥2,282,828"
   }
 }
