@@ -1,4 +1,5 @@
-import React from 'react'
+import React, { Component } from 'react'
+import axios from 'axios'
 import './App.css'
 import GridLayout from 'react-grid-layout'
 import PV from '../Components/PV/PV'
@@ -59,27 +60,52 @@ const layout = [
   },
 ]
 
-const App = () => (
-  <GridLayout className="layout" layout={layout} cols={12} rowHeight={60} width={1920}>
-    <div key="a">
-      <PV />
-    </div>
-    <div key="b">
-      <Figure title="有效用户数" subTitle="OKCHEM" figure="24,222" />
-    </div>
-    <div key="c">
-      <Figure title="注册用户数" subTitle="OKCHEM" figure="24,222" />
-    </div>
-    <div key="d">
-      <Figure title="付费用户数" subTitle="OKCHEM" figure="24,222" />
-    </div>
-    <div key="e">
-      <Income />
-    </div>
-    <div key="f">
-      <Figure title="GMV 营收" subTitle="总金额" figure="￥2,243,222" />
-    </div>
-  </GridLayout>
-)
+class App extends Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      PV: {
+        lastWeek: '0',
+        lastDay: '0',
+      },
+    }
+  }
+
+  componentDidMount() {
+    axios.get('https://s3.us-east-2.amazonaws.com/fanyj-surge-assets/data.json').then((response) => {
+      const { data } = response
+      this.setState(data)
+    })
+  }
+
+  render() {
+    const {
+      PV: { lastWeek, lastDay },
+    } = this.state
+
+    return (
+      <GridLayout className="layout" layout={layout} cols={12} rowHeight={60} width={1920}>
+        <div key="a">
+          <PV lastWeek={lastWeek} lastDay={lastDay} />
+        </div>
+        <div key="b">
+          <Figure title="有效用户数" subTitle="OKCHEM" figure="24,222" />
+        </div>
+        <div key="c">
+          <Figure title="注册用户数" subTitle="OKCHEM" figure="24,222" />
+        </div>
+        <div key="d">
+          <Figure title="付费用户数" subTitle="OKCHEM" figure="24,222" />
+        </div>
+        <div key="e">
+          <Income />
+        </div>
+        <div key="f">
+          <Figure title="GMV 营收" subTitle="总金额" figure="￥2,243,222" />
+        </div>
+      </GridLayout>
+    )
+  }
+}
 
 export default App
