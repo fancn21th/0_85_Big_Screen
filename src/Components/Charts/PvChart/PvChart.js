@@ -2,67 +2,30 @@ import React from 'react'
 import {
   Chart, Geom, Axis, Tooltip,
 } from 'bizcharts'
+import PropTypes from 'prop-types'
 
-const data = [
-  {
-    year: '1991',
-    value: 3,
-  },
-  {
-    year: '1992',
-    value: 4,
-  },
-  {
-    year: '1993',
-    value: 3.5,
-  },
-  {
-    year: '1994',
-    value: 5,
-  },
-  {
-    year: '1995',
-    value: 4.9,
-  },
-  {
-    year: '1996',
-    value: 6,
-  },
-  {
-    year: '1997',
-    value: 7,
-  },
-  {
-    year: '1998',
-    value: 9,
-  },
-  {
-    year: '1999',
-    value: 13,
-  },
-]
 const cols = {
   value: {
     min: 0,
   },
-  year: {
+  date: {
     range: [0, 1],
   },
 }
 
-const PvChart = () => (
+const PvChart = ({ data }) => (
   <Chart height={400} data={data} scale={cols} forceFit padding={[60, 60, 60, 60]} theme="dark">
-    <Axis name="year" />
+    <Axis name="date" />
     <Axis name="value" />
     <Tooltip
       crosshairs={{
         type: 'y',
       }}
     />
-    <Geom type="line" position="year*value" size={2} />
+    <Geom type="line" position="date*value" size={2} />
     <Geom
       type="point"
-      position="year*value"
+      position="date*value"
       size={4}
       shape="circle"
       style={{
@@ -72,5 +35,9 @@ const PvChart = () => (
     />
   </Chart>
 )
+
+PvChart.propTypes = {
+  data: PropTypes.arrayOf(PropTypes.object).isRequired,
+}
 
 export default PvChart

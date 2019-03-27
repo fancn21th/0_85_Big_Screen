@@ -67,6 +67,7 @@ class App extends Component {
       PV: {
         lastWeek: '0',
         lastDay: '0',
+        data: [],
       },
     }
   }
@@ -80,13 +81,13 @@ class App extends Component {
 
   render() {
     const {
-      PV: { lastWeek, lastDay },
+      PV: { lastWeek, lastDay, data: pvData },
     } = this.state
 
     return (
       <GridLayout className="layout" layout={layout} cols={12} rowHeight={60} width={1920}>
         <div key="a">
-          <PV lastWeek={lastWeek} lastDay={lastDay} />
+          <PV lastWeek={lastWeek} lastDay={lastDay} pvData={pvData} />
         </div>
         <div key="b">
           <Figure title="有效用户数" subTitle="OKCHEM" figure="24,222" />
