@@ -83,10 +83,12 @@ class App extends Component {
   }
 
   componentDidMount() {
-    axios.get('https://s3.us-east-2.amazonaws.com/fanyj-surge-assets/data.json').then((response) => {
-      const { data } = response
-      this.setState(data)
-    })
+    axios
+      .get(`https://s3.us-east-2.amazonaws.com/fanyj-surge-assets/data.json?${Date.now()}`)
+      .then((response) => {
+        const { data } = response
+        this.setState(data)
+      })
   }
 
   render() {
@@ -111,10 +113,10 @@ class App extends Component {
           <Figure title="付费用户数" subTitle="OKCHEM" figure={paidUserCount} />
         </div>
         <div key="e">
-          <Income transfer={transfer} contract={contract} gmv={gmv} />
+          <Income transfer={transfer} contract={contract} />
         </div>
         <div key="f">
-          <Figure title="GMV 营收" subTitle="总金额" figure="￥2,243,222" />
+          <Figure title="GMV 营收" subTitle="总金额" figure={gmv} />
         </div>
       </GridLayout>
     )
