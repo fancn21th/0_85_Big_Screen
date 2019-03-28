@@ -1,42 +1,38 @@
 {
   "PV": {
-    "lastWeek": "380,300",
-    "lastDay": "4,023",
+    "lastWeek": "4310",
+    "lastDay": "6003",
     "data": [
       {
-        "date": "2019/03/01",
-        "value": 3000
+        "date": "2019/03/21",
+        "value": 3930
       },
       {
-        "date": "2019/03/02",
-        "value": 2000
+        "date": "2019/03/22",
+        "value": 4305
       },
       {
-        "date": "2019/03/03",
-        "value": 1000
+        "date": "2019/03/25",
+        "value": 5321
       },
       {
-        "date": "2019/03/04",
-        "value": 2000
+        "date": "2019/03/26",
+        "value": 5500
       },
       {
-        "date": "2019/03/05",
-        "value": 3000
-      },
-      {
-        "date": "2019/03/06",
-        "value": 4000
+        "date": "2019/03/27",
+        "value": 6003
       }
     ]
   },
   "User": {
-    "validUserCount": "3,213",
-    "registeredUserCount": "2,213",
-    "paidUserCount": "1,213"
+    "validUserCount": "39,519",
+    "registeredUserCount": "3,799",
+    "paidUserCount": "197"
   },
   "Income": {
-    "transfer": "180万",
-    "contract": "1200万",
-    "gmv": "￥2,282,828"
+    "transfer": "￥121.7万",
+    "contract": "￥170.5万",
+    "gmv": "￥109万"
   }
 }
