@@ -121,7 +121,7 @@ class App extends Component {
           <Income transfer={transfer} contract={contract} incomeData={incomeData || []} />
         </div>
         <div key="f">
-          <Figure title="GMV" subTitle="总金额" figure={gmv} />
+          <Figure title="2019年GMV" subTitle="" figure={gmv} />
         </div>
       </GridLayout>
     )

@@ -8,7 +8,11 @@ body {
   -moz-osx-font-smoothing: grayscale;
   font-size: 24px;
   color: #ffffff;
-  background-color: black;
+  background-color: #2d598a; /* For browsers that do not support gradients */
+  background-image: linear-gradient(
+    #4473b2,
+    #1a4369
+  ); /* Standard syntax (must be last) */
   opacity: 0.95;
   filter: alpha(opacity=95); /* For IE8 and earlier */
 }

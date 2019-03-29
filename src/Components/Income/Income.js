@@ -16,9 +16,9 @@ const Income = ({ transfer, contract, incomeData }) => {
   return (
     <div className="income-container">
       <div className="income-title">
-        <Title className="income-title--top" title="营收金额" subTitle="2019" />
+        <Title className="income-title--top" title="2019年营收金额" subTitle="" />
         <div className="income-title--bottom">
-          <Figure className="income-title--bottom__half" title="已汇款金额" figure={transfer} />
+          <Figure className="income-title--bottom__half" title="已收款金额" figure={transfer} />
           <Figure className="income-title--bottom__half" title="合同总金额" figure={contract} />
         </div>
       </div>

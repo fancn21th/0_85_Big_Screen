@@ -19,7 +19,7 @@ const BarChart = ({ data }) => {
 
   return (
     <div>
-      <Chart height={275} data={data} scale={cols} padding={[60, 60, 60, 60]} forceFit theme="dark">
+      <Chart height={275} data={data} scale={cols} padding={[60, 60, 60, 60]} forceFit>
         <Axis name="date" />
         <Axis name="value" />
         <Tooltip

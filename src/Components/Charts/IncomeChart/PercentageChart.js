@@ -50,7 +50,7 @@ const PrecentageChart = ({ percentage }) => {
   }
 
   return (
-    <Chart height={240} data={[1]} scale={cols} padding={[0, 0, 0, 0]} forceFit theme="dark">
+    <Chart height={240} data={[1]} scale={cols} padding={[0, 0, 0, 0]} forceFit>
       <View data={data1}>
         <Coord
           type="polar"

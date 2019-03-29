@@ -1,5 +1,8 @@
 .react-grid-item:not(.react-grid-placeholder) {
-  background: #1f1f1f;
-  opacity: 0.9;
-  filter: alpha(opacity=90); /* For IE8 and earlier */
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.15
+  ); /* For browsers that do not support gradients */
 }
