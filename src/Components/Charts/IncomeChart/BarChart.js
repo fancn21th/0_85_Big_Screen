@@ -7,7 +7,7 @@ import PropTypes from 'prop-types'
 const BarChart = ({ data }) => {
   const cols = {
     value: {
-      tickInterval: 20,
+      tickInterval: 200,
     },
   }
 
