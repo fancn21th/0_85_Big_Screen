@@ -3,9 +3,10 @@ import PropTypes from 'prop-types'
 import Title from '../Texts/Title/Title'
 import Figure from '../Texts/Figure/Figure1'
 import PercentageChart from '../Charts/IncomeChart/PercentageChart'
+import BarChart from '../Charts/IncomeChart/BarChart'
 import './Income.css'
 
-const Income = ({ transfer, contract }) => {
+const Income = ({ transfer, contract, incomeData }) => {
   const transferCount = /\d{1,}\.\d{1,}/.exec(transfer)
 
   const contractCount = /\d{1,}\.\d{1,}/.exec(contract)
@@ -22,7 +23,12 @@ const Income = ({ transfer, contract }) => {
         </div>
       </div>
       <div className="income-charts">
-        <PercentageChart percentage={percentage} />
+        <div className="income-charts__left">
+          <BarChart data={incomeData} />
+        </div>
+        <div className="income-charts__right">
+          <PercentageChart percentage={percentage} />
+        </div>
       </div>
     </div>
   )
@@ -31,6 +37,7 @@ const Income = ({ transfer, contract }) => {
 Income.propTypes = {
   transfer: PropTypes.string.isRequired,
   contract: PropTypes.string.isRequired,
+  incomeData: PropTypes.arrayOf(PropTypes.object).isRequired,
 }
 
 export default Income

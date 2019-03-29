@@ -1,38 +1,80 @@
 {
   "PV": {
     "lastWeek": "4310",
-    "lastDay": "6003",
+    "lastDay": "5616",
     "data": [
       {
-        "date": "2019/03/21",
-        "value": 3930
+        "date": "第1周",
+        "value": 1375
       },
       {
-        "date": "2019/03/22",
-        "value": 4305
+        "date": "第2周",
+        "value": 1834
       },
       {
-        "date": "2019/03/25",
-        "value": 5321
+        "date": "第3周",
+        "value": 1964
       },
       {
-        "date": "2019/03/26",
-        "value": 5500
+        "date": "第4周",
+        "value": 2458
       },
       {
-        "date": "2019/03/27",
-        "value": 6003
+        "date": "第5周",
+        "value": 2393
+      },
+      {
+        "date": "第6周",
+        "value": 923
+      },
+      {
+        "date": "第7周",
+        "value": 2867
+      },
+      {
+        "date": "第8周",
+        "value": 3094
+      },
+      {
+        "date": "第9周",
+        "value": 4023
+      },
+      {
+        "date": "第10周",
+        "value": 3855
+      },
+      {
+        "date": "第11周",
+        "value": 4094
+      },
+      {
+        "date": "第12周",
+        "value": 4310
       }
     ]
   },
   "User": {
-    "validUserCount": "39,519",
-    "registeredUserCount": "3,799",
-    "paidUserCount": "197"
+    "validUserCount": "41,275",
+    "registeredUserCount": "3,817",
+    "paidUserCount": "187"
   },
   "Income": {
-    "transfer": "￥121.7万",
+    "transfer": "￥126.8万",
     "contract": "￥170.5万",
-    "gmv": "￥109万"
+    "gmv": "$109.0万",
+    "data": [
+      {
+        "date": "第1周",
+        "value": 1375
+      },
+      {
+        "date": "第2周",
+        "value": 1834
+      },
+      {
+        "date": "第3周",
+        "value": 1964
+      }
+    ]
   }
 }

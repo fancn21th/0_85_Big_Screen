@@ -14,7 +14,7 @@ const cols = {
 }
 
 const LineChart = ({ data }) => (
-  <Chart height={400} data={data} scale={cols} forceFit padding={[60, 60, 60, 60]} theme="dark">
+  <Chart height={275} data={data} scale={cols} forceFit padding={[60, 60, 60, 60]} theme="dark">
     <Axis name="date" />
     <Axis name="value" />
     <Tooltip

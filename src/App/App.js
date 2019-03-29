@@ -78,6 +78,7 @@ class App extends Component {
         transfer: '0万',
         contract: '0万',
         gmv: '￥0',
+        data: [],
       },
     }
   }
@@ -97,7 +98,9 @@ class App extends Component {
     const {
       PV: { lastWeek, lastDay, data: pvData },
       User: { validUserCount, registeredUserCount, paidUserCount },
-      Income: { transfer, contract, gmv },
+      Income: {
+        transfer, contract, gmv, data: incomeData,
+      },
     } = this.state
 
     return (
@@ -115,7 +118,7 @@ class App extends Component {
           <Figure title="付费用户数" subTitle="OKCHEM" figure={paidUserCount} />
         </div>
         <div key="e">
-          <Income transfer={transfer} contract={contract} />
+          <Income transfer={transfer} contract={contract} incomeData={incomeData} />
         </div>
         <div key="f">
           <Figure title="GMV 营收" subTitle="总金额" figure={gmv} />

@@ -8,6 +8,12 @@
   height: 50%;
 }
 
+.income-charts__left,
+.income-charts__right {
+  float: left;
+  width: 50%;
+}
+
 .income-title--bottom__half {
   width: 50%;
   float: left;
