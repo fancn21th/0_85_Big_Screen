@@ -8,7 +8,7 @@ import './PV.css'
 const PV = ({ lastWeek, lastDay, pvData }) => (
   <div className="pv-container">
     <div className="pv-title">
-      <Title className="pv-title--top" title="平台流量数据" subTitle="日均PV" />
+      <Title className="pv-title--top" title="日均流量数据" subTitle="当月" />
       <div className="pv-title--bottom">
         <Figure className="pv-title--bottom__half" title="上周" figure={lastWeek} />
         <Figure className="pv-title--bottom__half" title="昨日" figure={lastDay} />

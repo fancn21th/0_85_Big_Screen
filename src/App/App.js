@@ -106,22 +106,22 @@ class App extends Component {
     return (
       <GridLayout className="layout" layout={layout} cols={12} rowHeight={60} width={1920}>
         <div key="a">
-          <PV lastWeek={lastWeek} lastDay={lastDay} pvData={pvData} />
+          <PV lastWeek={lastWeek} lastDay={lastDay} pvData={pvData || []} />
         </div>
         <div key="b">
-          <Figure title="有效用户数" subTitle="OKCHEM" figure={validUserCount} />
+          <Figure title="有效用户数" subTitle="" figure={validUserCount} />
         </div>
         <div key="c">
-          <Figure title="注册用户数" subTitle="OKCHEM" figure={registeredUserCount} />
+          <Figure title="注册用户数" subTitle="" figure={registeredUserCount} />
         </div>
         <div key="d">
-          <Figure title="付费用户数" subTitle="OKCHEM" figure={paidUserCount} />
+          <Figure title="付费用户数" subTitle="" figure={paidUserCount} />
         </div>
         <div key="e">
-          <Income transfer={transfer} contract={contract} incomeData={incomeData} />
+          <Income transfer={transfer} contract={contract} incomeData={incomeData || []} />
         </div>
         <div key="f">
-          <Figure title="GMV 营收" subTitle="总金额" figure={gmv} />
+          <Figure title="GMV" subTitle="总金额" figure={gmv} />
         </div>
       </GridLayout>
     )
