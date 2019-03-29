@@ -84,7 +84,9 @@ class App extends Component {
 
   componentDidMount() {
     axios
-      .get(`https://s3.us-east-2.amazonaws.com/fanyj-surge-assets/data.json?${Date.now()}`)
+      .get(
+        `https://raw.githubusercontent.com/fancn21th/0_85_Big_Screen/master/mock/data.json?${Date.now()}`,
+      )
       .then((response) => {
         const { data } = response
         this.setState(data)

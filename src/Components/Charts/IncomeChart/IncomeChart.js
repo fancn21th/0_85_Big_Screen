@@ -7,7 +7,7 @@ import PropTypes from 'prop-types'
 
 const { Text } = Guide
 
-const IncomeChart = ({ presentage }) => {
+const IncomeChart = ({ percentage }) => {
   // 下面的代码会被作为 cdn script 注入 注释勿删
   // CDN START
   // 构造数据
@@ -22,7 +22,7 @@ const IncomeChart = ({ presentage }) => {
   const data2 = []
   for (let i = 0; i < 50; i += 1) {
     const item = {}
-    const halfPresentage = Math.round(presentage / 2)
+    const halfPresentage = Math.round(percentage / 2)
     item.type = `${i}`
     item.value = 10
     if (i === halfPresentage) {
@@ -105,7 +105,7 @@ const IncomeChart = ({ presentage }) => {
         <Guide>
           <Text
             position={['50%', '65%']}
-            content={`${presentage}%`}
+            content={`${percentage}%`}
             style={{
               fill: '#FFFFFF',
               fontSize: 60,
@@ -120,7 +120,7 @@ const IncomeChart = ({ presentage }) => {
 }
 
 IncomeChart.propTypes = {
-  presentage: PropTypes.number.isRequired,
+  percentage: PropTypes.number.isRequired,
 }
 
 // CDN END
