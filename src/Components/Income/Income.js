@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Title from '../Texts/Title/Title'
 import Figure from '../Texts/Figure/Figure1'
-import IncomeChart from '../Charts/IncomeChart/IncomeChart'
+import PercentageChart from '../Charts/IncomeChart/PercentageChart'
 import './Income.css'
 
 const Income = ({ transfer, contract }) => {
@@ -10,7 +10,7 @@ const Income = ({ transfer, contract }) => {
 
   const contractCount = /\d{1,}\.\d{1,}/.exec(contract)
 
-  const percentage = Math.round((transferCount / contractCount) * 100)
+  const percentage = Math.round((transferCount / contractCount) * 100) || '0'
 
   return (
     <div className="income-container">
@@ -21,7 +21,9 @@ const Income = ({ transfer, contract }) => {
           <Figure className="income-title--bottom__half" title="合同总金额" figure={contract} />
         </div>
       </div>
-      <IncomeChart percentage={percentage} />
+      <div className="income-charts">
+        <PercentageChart percentage={percentage} />
+      </div>
     </div>
   )
 }

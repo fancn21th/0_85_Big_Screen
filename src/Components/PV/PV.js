@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Title from '../Texts/Title/Title'
 import Figure from '../Texts/Figure/Figure1'
-import PvChart from '../Charts/PvChart/PvChart'
+import LineChart from '../Charts/PvChart/LineChart'
 import './PV.css'
 
 const PV = ({ lastWeek, lastDay, pvData }) => (
@@ -14,7 +14,7 @@ const PV = ({ lastWeek, lastDay, pvData }) => (
         <Figure className="pv-title--bottom__half" title="昨日" figure={lastDay} />
       </div>
     </div>
-    <PvChart data={pvData} />
+    <LineChart data={pvData} />
   </div>
 )
 

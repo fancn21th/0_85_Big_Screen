@@ -7,7 +7,7 @@ import PropTypes from 'prop-types'
 
 const { Text } = Guide
 
-const IncomeChart = ({ percentage }) => {
+const PrecentageChart = ({ percentage }) => {
   // 下面的代码会被作为 cdn script 注入 注释勿删
   // CDN START
   // 构造数据
@@ -119,9 +119,9 @@ const IncomeChart = ({ percentage }) => {
   )
 }
 
-IncomeChart.propTypes = {
+PrecentageChart.propTypes = {
   percentage: PropTypes.number.isRequired,
 }
 
 // CDN END
-export default IncomeChart
+export default PrecentageChart
