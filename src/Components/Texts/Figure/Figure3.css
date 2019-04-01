@@ -1,0 +1,29 @@
+.figure3 {
+  height: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.figure3--content-wrapper {
+}
+
+.figure3--figure,
+.figure3--title,
+.figure3--subTitle {
+  display: block;
+}
+
+.figure3--figure {
+  font-size: 310%;
+}
+
+.figure3--title {
+  font-size: 80%;
+  font-weight: 800;
+}
+
+.figure3--subTitle {
+  font-size: 60%;
+}

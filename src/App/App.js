@@ -5,6 +5,7 @@ import GridLayout from 'react-grid-layout'
 import PV from '../Components/PV/PV'
 import Income from '../Components/Income/Income'
 import Figure from '../Components/Texts/Figure/Figure2'
+import Figure3 from '../Components/Texts/Figure/Figure3'
 
 /*
   a: 平台流量数据(折线图)
@@ -121,7 +122,7 @@ class App extends Component {
           <Income transfer={transfer} contract={contract} incomeData={incomeData || []} />
         </div>
         <div key="f">
-          <Figure title="2019年GMV" subTitle="" figure={gmv} />
+          <Figure3 title="2019年GMV" subTitle="" figure={gmv} />
         </div>
       </GridLayout>
     )
