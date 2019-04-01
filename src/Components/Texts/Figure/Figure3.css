@@ -1,0 +1,25 @@
+.figure3 {
+  height: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.text-figure3 {
+  
+}
+
+.figure3--figure,
+.figure3--title {
+  display: block;
+}
+
+.figure3--figure {
+  font-size: 310%;
+}
+
+.figure3--title {
+  font-size: 90%;
+}

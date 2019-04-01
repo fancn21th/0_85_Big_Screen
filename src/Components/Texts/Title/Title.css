@@ -1,5 +1,5 @@
 .title {
-  height: 100%;
+  height: 50%;
   text-align: center;
   display: flex;
   justify-content: center;
@@ -15,7 +15,7 @@
 }
 
 .title--main {
-  font-size: 80%;
+  font-size: 100%;
   font-weight: 800;
 }
 

@@ -1,21 +1,21 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import './Figure2.css'
+import SubTitle from '../Title/subTitle'
+import Figure from '../Title/figure'
 
 const Figure2 = ({
-  title, subTitle, figure, className,
+  subTitle, figure, className,
 }) => (
   <div className={`figure2 ${className}`}>
-    <div className="figure2--content-wrapper">
-      <span className="figure2--title">{title}</span>
-      <span className="figure2--subTitle">{subTitle}</span>
-      <span className="figure2--figure">{figure}</span>
+    <div className="text-figure">
+      <SubTitle subTitle={subTitle} />
+      <Figure figure={figure} />
     </div>
   </div>
 )
 
 Figure2.propTypes = {
-  title: PropTypes.string.isRequired,
   subTitle: PropTypes.string.isRequired,
   figure: PropTypes.string.isRequired,
   className: PropTypes.string,

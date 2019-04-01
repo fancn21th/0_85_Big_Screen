@@ -5,6 +5,7 @@ import GridLayout from 'react-grid-layout'
 import PV from '../Components/PV/PV'
 import Income from '../Components/Income/Income'
 import Figure from '../Components/Texts/Figure/Figure2'
+import Figure3 from '../Components/Texts/Figure/Figure3'
 
 /*
   a: 平台流量数据(折线图)
@@ -109,19 +110,19 @@ class App extends Component {
           <PV lastWeek={lastWeek} lastDay={lastDay} pvData={pvData || []} />
         </div>
         <div key="b">
-          <Figure title="有效用户数" subTitle="" figure={validUserCount} />
+          <Figure title="有效用户数" subTitle="有效用户数" figure={validUserCount} />
         </div>
         <div key="c">
-          <Figure title="注册用户数" subTitle="" figure={registeredUserCount} />
+          <Figure title="注册用户数" subTitle="注册用户数" figure={registeredUserCount} />
         </div>
         <div key="d">
-          <Figure title="付费用户数" subTitle="" figure={paidUserCount} />
+          <Figure title="付费用户数" subTitle="付费用户数" figure={paidUserCount} />
         </div>
         <div key="e">
           <Income transfer={transfer} contract={contract} incomeData={incomeData || []} />
         </div>
         <div key="f">
-          <Figure title="2019年GMV" subTitle="" figure={gmv} />
+          <Figure3 title="2019年GMV" figure={gmv} />
         </div>
       </GridLayout>
     )
