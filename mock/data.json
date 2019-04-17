@@ -66,6 +66,7 @@
     ]
   },
   "User": {
+<<<<<<< HEAD
     "validUserCount": "52,186",
     "registeredUserCount": "4,214",
     "paidUserCount": "210"
@@ -73,6 +74,15 @@
   "Income": {
     "transfer": "￥143.7万",
     "contract": "￥203.5万",
+=======
+    "validUserCount": "47,477",
+    "registeredUserCount": "4,174",
+    "paidUserCount": "208"
+  },
+  "Income": {
+    "transfer": "￥143.7万",
+    "contract": "￥201.6万",
+>>>>>>> b1402750cca6848075a4aa4b4c0b9a239b8b3e8f
     "gmv": "$129.7万",
     "data": [
       {
