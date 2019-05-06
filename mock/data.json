@@ -78,13 +78,13 @@
     ]
   },
   "User": {
-    "validUserCount": "55,414",
-    "registeredUserCount": "4,670",
-    "paidUserCount": "220"
+    "validUserCount": "55,833",
+    "registeredUserCount": "4,684",
+    "paidUserCount": "221"
   },
   "Income": {
-    "transfer": "￥181.6万",
-    "contract": "￥260.3万",
+    "transfer": "￥182.5万",
+    "contract": "￥260.9万",
     "gmv": "$129.7万",
     "data": [
       {
@@ -101,7 +101,7 @@
       },
       {
         "date": "4月",
-        "value": 509396
+        "value": 519396
       }
     ]
   }
