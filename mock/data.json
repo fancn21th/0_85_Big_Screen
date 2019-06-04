@@ -1,7 +1,7 @@
 {
   "PV": {
     "lastWeek": "8316",
-    "lastDay": "7285",
+    "lastDay": "8091",
     "data": [
       {
         "date": "第1周",
@@ -94,14 +94,14 @@
     ]
   },
   "User": {
-    "validUserCount": "66,029",
-    "registeredUserCount": "5,393",
+    "validUserCount": "66,315",
+    "registeredUserCount": "5,436",
     "paidUserCount": "238"
   },
   "Income": {
-    "transfer": "￥257.1万",
-    "contract": "￥393.7万",
-    "gmv": "$189.4万",
+    "transfer": "￥261.6万",
+    "contract": "￥392.9万",
+    "gmv": "$220.7万",
     "data": [
       {
         "date": "1月",
@@ -117,11 +117,15 @@
       },
       {
         "date": "4月",
-        "value": 521048
+        "value": 526608
       },
       {
         "date": "5月",
-        "value": 767727
+        "value": 763690
+      },
+      {
+        "date": "6月",
+        "value": 19000
       }
     ]
   }
