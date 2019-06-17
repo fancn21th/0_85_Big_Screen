@@ -1,7 +1,7 @@
 {
   "PV": {
-    "lastWeek": "7478",
-    "lastDay": "6959",
+    "lastWeek": "6640",
+    "lastDay": "5776",
     "data": [
       {
         "date": "第1周",
@@ -94,13 +94,17 @@
       {
         "date": "第23周",
         "value": 7478
+      },
+      {
+        "date": "第24周",
+        "value": 6640
       }
     ]
   },
   "User": {
-    "validUserCount": "68,577",
-    "registeredUserCount": "5,677",
-    "paidUserCount": "252"
+    "validUserCount": "69,003",
+    "registeredUserCount": "12,710",
+    "paidUserCount": "253"
   },
   "Income": {
     "transfer": "￥279.0万",
