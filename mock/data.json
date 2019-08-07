@@ -1,7 +1,7 @@
 {
   "PV": {
     "lastWeek": "7774",
-    "lastDay": "7866",
+    "lastDay": "9044",
     "data": [
       {
         "date": "第1周",
@@ -101,37 +101,37 @@
       },
       {
         "date": "第25周",
-        "value": 10783
+        "value":10783
       },
       {
         "date": "第26周",
-        "value": 9077
+        "value":9077
       },
       {
         "date": "第27周",
-        "value": 7003
+        "value":7003
       },
       {
         "date": "第28周",
-        "value": 7381
+        "value":7381
       },
       {
         "date": "第29周",
-        "value": 7024
+        "value":7024
       },
       {
         "date": "第30周",
-        "value": 8240
+        "value":8240
       },
       {
         "date": "第31周",
-        "value": 7774
+        "value":7774
       }
     ]
   },
   "User": {
-    "validUserCount": "83,667",
-    "registeredUserCount": "17,002",
+    "validUserCount": "84,138",
+    "registeredUserCount": "17,027",
     "paidUserCount": "288"
   },
   "Income": {
