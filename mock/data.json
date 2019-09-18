@@ -1,7 +1,7 @@
 {
   "PV": {
     "lastWeek": "6849",
-    "lastDay": "7311",
+    "lastDay": "12010",
     "data": [
       {
         "date": "第1周",
@@ -154,8 +154,8 @@
     ]
   },
   "User": {
-    "validUserCount": "91,484",
-    "registeredUserCount": "18,670",
+    "validUserCount": "91,632",
+    "registeredUserCount": "18,701",
     "paidUserCount": "303"
   },
   "Income": {
